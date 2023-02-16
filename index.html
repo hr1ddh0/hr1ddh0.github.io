@@ -4,8 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, iniitial-scale=1.0">
   <title>vCard - Personal Portfolio</title>
+  <style> /* GLOBAL STYLES */
+    body {
+        background: #333;
+        padding-top: 5em;
+        display: flex;
+        justify-content: center;
+      }
+      
+      /* DEMO-SPECIFIC STYLES */
+      .typewriter h1 {
+        color: #fff;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+  </style>    
 
   <!--
     - favicon
@@ -23,9 +64,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
 </head>
 
 <body>
+
+  <//a!nimation///>
+
 
   <!--
     - #MAIN
@@ -48,7 +93,7 @@
         <div class="info-content">
         
           <div class="typewriter">
-            <h1 style="color: orange; font-size:13px;">S M Ashikuzzaman Hriddho</h1>
+            <h1 style="color: orange; font-size:15px;">S M Ashikuzzaman Hriddho</h1>
           </div>
           <p class="title">Web Developer and Designer</p>
         </div>
