@@ -58,46 +58,58 @@
 
 ////-- Animation for About Me section --////
   
-$bg: #1d1f20;
-$text-color: #ffffff;
-$caret-color: white;
-$text-length: 16;
-$animation-time: 4s;
-// Center content
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: $bg;
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+   
+
+.wrapper.ten {
+    background-color: #000000;
 }
-// Basic style
-h1 {
-  font-family: 'Inconsolata', Consolas, monospace;
-	font-size: 4em;
-	color: $text-color;
-}
-// Typing style
-.typing {
-  position: relative;
-	&::after {
-    content: "|";
-    position: absolute;
-    right: 0;
+.bounce {
+    font-size: 5rem;
     width: 100%;
-    color: $caret-color;
-    background: $bg;
-    animation: typing $animation-time steps($text-length) forwards,
-      caret 1s infinite;
-  }
+    margin: 3rem auto;
+    display: inline-flex;
+    justify-content: center;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
 }
-// Animation
-@keyframes typing {
-	to { width: 0 }
+.bounce span {
+    display: inline-flex;
+    color: #c7f4ff;
+    font-family: "Play", sans-serif;
+    animation: bounce 1s infinite;
 }
-@keyframes caret {
-	50% { color: transparent }
+@keyframes bounce {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
 }
+.ten span:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+.ten span:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+.ten span:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+.ten span:nth-of-type(4) {
+    animation-delay: 0.4s;
+}
+.ten span:nth-of-type(5) {
+    animation-delay: 0.5s;
+}
+.ten span:nth-of-type(6) {
+    animation-delay: 0.6s;
+}
+
+
 
   </////end///>
 
@@ -314,7 +326,20 @@ h1 {
         <header>
    
           
-      <h1 class="typing">About me</h1>
+          <div class="wrapper ten">
+        <div>
+            <h3 class="bounce">
+                <span>A</span>
+                <span>B</span>
+                <span>O</span>
+                <span>U</span>
+                <span>T</span>
+<br>
+                <span>M</span>
+<span>E</span>
+            </h3>
+        </div>
+    </div>
 
 
 
