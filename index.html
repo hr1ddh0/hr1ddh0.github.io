@@ -59,55 +59,23 @@
 ////-- Animation for About Me section --////
   
 
-
-        @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-   
-
-.wrapper.ten {
-    background-color: #000000;
-}
-.bounce {
-    font-size: 16px;
-    width: 100%;
-    margin: 1rem auto;
-    display: inline-flex;
-    justify-content: center;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
-}
-.bounce span {
-    display: inline-flex;
-    color: #c7f4ff;
-    font-family: "Play", sans-serif;
-    animation: bounce 1s infinite;
-}
-@keyframes bounce {
-    0%,
-    50%,
-    100% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-20px);
-    }
-}
-.ten span:nth-of-type(1) {
-    animation-delay: 0.1s;
-}
-.ten span:nth-of-type(2) {
-    animation-delay: 0.2s;
-}
-.ten span:nth-of-type(3) {
-    animation-delay: 0.3s;
-}
-.ten span:nth-of-type(4) {
-    animation-delay: 0.4s;
-}
-.ten span:nth-of-type(5) {
-    animation-delay: 0.5s;
-}
-.ten span:nth-of-type(6) {
-    animation-delay: 0.6s;
-}
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100'
+html, body
+  font-family 'Roboto bold', monospace
+  background #212121
+  height 100%
+.container
+  height 100%
+  width 100%
+  justify-content center
+  align-items center
+  display flex
+.text
+  font-weight 100
+  font-size 28px
+  color #FAFAFA
+.dud
+  color #757575
 
 
 
@@ -326,20 +294,9 @@
         <header>
    
           
-          <div class="wrapper ten">
-        <div>
-            <h3 class="bounce">
-                <span>A</span>
-                <span>B</span>
-                <span>O</span>
-                <span>U</span>
-                <span>T</span>
-<br>
-                <span>M</span>
-<span>E</span>
-            </h3>
-        </div>
-    </div>
+          <div class="container">
+  <div class="text"></div>
+</div>
 
 
 
