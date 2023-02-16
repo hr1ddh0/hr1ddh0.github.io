@@ -63,7 +63,7 @@ const phrases = [
   'About me',
 ]
 
-const el = document.querySelector('.text')
+const el = document.querySelector('.aboutmeanimation')
 const fx = new TextScramble(el)
 
 let counter = 0
