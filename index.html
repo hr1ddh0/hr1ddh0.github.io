@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, iniitial-scale=1.0">
-  <title>S M Ashikuzzaman Hriddho - Personal Portfolio</title>
+  <title>S M Ashikuzzaman Hriddho - Portfolio</title>
   <style>
     /* GLOBAL STYLES */
     body {
@@ -57,85 +57,49 @@
     }
 
 ////-- Animation for About Me section --////
-  $bg: #1d1f20;
-
+  
+$bg: #1d1f20;
 $text-color: #ffffff;
-
 $caret-color: white;
-
 $text-length: 16;
-
 $animation-time: 4s;
-
 // Center content
-
 body {
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   height: 100vh;
-
   background: $bg;
-
 }
-
 // Basic style
-
 h1 {
-
   font-family: 'Inconsolata', Consolas, monospace;
-
 	font-size: 4em;
-
 	color: $text-color;
-
 }
-
 // Typing style
-
 .typing {
-
   position: relative;
-
 	&::after {
-
     content: "|";
-
     position: absolute;
-
     right: 0;
-
     width: 100%;
-
     color: $caret-color;
-
     background: $bg;
-
     animation: typing $animation-time steps($text-length) forwards,
-
       caret 1s infinite;
-
   }
-
 }
-
 // Animation
-
 @keyframes typing {
-
 	to { width: 0 }
-
+}
+@keyframes caret {
+	50% { color: transparent }
 }
 
-
-
- 
-  
-  
+  </////end///>
 
 
 
@@ -349,13 +313,8 @@ h1 {
 
         <header>
    
-          <div class="info-content">
-
-          <div class="typewriter">
-
-            <h1 style="color: white; font: size 14px;"><b>About me </b></h1>
-
-          </div>
+          
+      <h1 class="typing">About me</h1>
 
 
 
