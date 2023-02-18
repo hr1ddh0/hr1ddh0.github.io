@@ -1885,29 +1885,60 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 \/** Services**/\
 
-/* add animation delay for service items */
-.service-item:nth-child(1) { animation-delay: 0.2s; }
-.service-item:nth-child(2) { animation-delay: 1s; }
-.service-item:nth-child(3) { animation-delay: 1.6s; }
-
-/* apply animation effect to service items */
-.service-item {
-  visibility: hidden;
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+.service {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-/* define animation effect */
-@keyframes fadeInUp {
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-item {
+  margin: 0 15px 30px;
+  text-align: center;
+  opacity: 0;
+  animation: fade-in-up 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.service-content-box {
+  text-align: center;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-item:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.service-item:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translateY(40px);
   }
-
   to {
     opacity: 1;
-    transform: none;
+    transform: translateY(0);
   }
 }
-
