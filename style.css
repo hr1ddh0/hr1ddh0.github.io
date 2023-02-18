@@ -39,76 +39,21 @@
 
 ##// Services //##
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-body {
-  background: #2c3e50;
-}
-
-h1{
-  font-size: 30px;
-  color: #ffffff;
-  margin: 50px 0 50px 25px;
-}
-/*=== Basic box styling  ===*/
-.box {
-  background: #2ecc71 none repeat scroll 0 0;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  height: 150px;
-  line-height: 150px;
-  margin: 0 auto 3%;
-  padding: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 95%;
-}
-/*=== Trigger  ===*/
-.animate {
-  -webkit-animation-duration: 1s;
+.service-item {
+  animation-name: fadeInUp;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 }
 
-/*=== Optional Delays, change values here  ===*/
-.one {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
 
-/*=== Animations start here  ===*/
 
-/*==== FADE IN UP ===*/
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 50%, 0);
   }
 
   to {
     opacity: 1;
-    -webkit-transform: none;
     transform: none;
   }
-}
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
