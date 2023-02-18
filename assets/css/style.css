@@ -1947,19 +1947,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 //*Body section's myname*//
 
 .typewriter {
-  position: relative;
-  border: 3px solid orange;
-  padding: 20px;
-  width: 400px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.typewriter-text {
+.typewriter h1 {
   color: orange;
-  font-size: auto;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  word-wrap: break-word;
 }
+
 
