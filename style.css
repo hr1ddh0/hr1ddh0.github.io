@@ -1,8 +1,8 @@
 .about-me {
   width: 100%;
   height: 300px;
-  background-color: transparent;
-  margin-bottom: 0;
+  background-color: transparent; /* transparent background */
+  overflow: hidden;
 }
 
 .about-me-content {
@@ -11,18 +11,51 @@
   padding: 5px;
   box-sizing: border-box;
   animation: slide-in-left 1s ease-out;
+  perspective: 1000px;
 }
 
 .about-me-content h2 {
   margin-top: 0;
-  color: #F07B3F; /* orange-goldish color */
+  color: #F07B3F; /* gold linear gradient color */
+  transform: translateX(100%);
+  animation: slide-in-from-right 1s ease-out;
 }
 
-@keyframes slide-in {
-  0% {
-    transform: translateX(-100%);
+.about-me-content p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateZ(-50px);
+  color: white; /* white color */
+  font-size: 18px;
+  line-height: 1.5;
+  animation: text-3d 1s ease-out;
+  transform-style: preserve-3d;
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
   }
-  100% {
-    transform: translateX(0);
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes text-3d {
+  from {
+    transform: translate(-50%, -50%) translateZ(-50px) rotateX(-90deg);
+  }
+  to {
+    transform: translate(-50%, -50%) translateZ(0) rotateX(0deg);
   }
 }
