@@ -59,23 +59,34 @@
 ////-- Animation for About Me section --////
   
 
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100'
-html, body
-  font-family 'Roboto bold', monospace
-  background #212121
-  height 100%
-.aboutmeanimation
-  height 100%
-  width 100%
-  justify-content center
-  align-items center
-  display flex
-.text
-  font-weight 100
-  font-size 28px
-  color #FAFAFA
-.dud
-  color #757575
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #252839;
+
+}
+h2{
+    position: relative;
+    font-size: 14vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
 
 
@@ -289,14 +300,12 @@ html, body
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+     
+ 
+        <h2 data-text="About me">About me
+      </h2>
 
-        <header>
-   
-          
-          <div class="aboutmeanimation">
-  <div class="text"></div>
-</div>
+
 
 
 
