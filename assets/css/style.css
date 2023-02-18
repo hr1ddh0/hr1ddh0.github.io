@@ -1885,10 +1885,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 \/** Services**/\
 
+/* add animation delay for service items */
+.service-item:nth-child(1) { animation-delay: 0.2s; }
+.service-item:nth-child(2) { animation-delay: 0.8s; }
+.service-item:nth-child(3) { animation-delay: 1s; }
+
+/* apply animation effect to service items */
+.service-item {
+  visibility: hidden;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* define animation effect */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
   to {
@@ -1897,15 +1911,3 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 }
 
-.service-item {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-}
-
-.service-item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.service-item:nth-child(3) {
-  animation-delay: 0.4s;
-}
