@@ -1,0 +1,30 @@
+.about-me {
+  width: 100%;
+  height: 300px;
+  background-color: #F07B3F;
+  overflow: hidden;
+}
+
+.about-me-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: slide-in-left 1s ease-out;
+  color: #FFF;
+}
+
+.about-me-content h2 {
+  margin-top: 0;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
