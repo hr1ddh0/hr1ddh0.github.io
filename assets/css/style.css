@@ -1946,13 +1946,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 //*Body section's myname*//
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 .typewriter {
   border: 2px solid orange;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 5vw;
+  font-size: auto;
+  font-weight: 700;
   line-height: 1.2;
-  font-family: 'Courier New', monospace;
+  font-family: 'Montserrat', sans-serif;
   padding: 1rem;
 }
 
