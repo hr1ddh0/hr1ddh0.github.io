@@ -1,7 +1,7 @@
 .about-me {
   width: 100%;
   height: 300px;
-  background-color: #F2F2F2;
+  background-color: rgba(0, 0, 0, 0); /* transparent background */
   overflow: hidden;
 }
 
@@ -18,13 +18,4 @@
   color: #F07B3F; /* orange-goldish color */
 }
 
-@keyframes slide-in-left {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+@keyframes slide-in
