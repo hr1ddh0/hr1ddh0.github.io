@@ -1947,19 +1947,31 @@ textarea.form-input::-webkit-resizer { display: none; }
 //*Body section's myname*//
 
 .typewriter {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 2px solid orange;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 5vw;
+  line-height: 1.2;
+  font-family: 'Courier New', monospace;
+  padding: 1rem;
 }
 
 .typewriter h1 {
+  display: inline-block;
+  animation: typewriter 3s steps(30) forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   color: orange;
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
-  word-wrap: break-word;
 }
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 
 
