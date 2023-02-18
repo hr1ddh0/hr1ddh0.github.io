@@ -1894,7 +1894,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .service-item {
   visibility: hidden;
   animation-name: fadeInUp;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: both;
 }
 
