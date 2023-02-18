@@ -1942,3 +1942,24 @@ textarea.form-input::-webkit-resizer { display: none; }
     transform: translateY(0);
   }
 }
+
+
+//*Body section's myname*//
+
+.typewriter {
+  position: relative;
+  border: 3px solid orange;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.typewriter-text {
+  color: orange;
+  font-size: auto;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
